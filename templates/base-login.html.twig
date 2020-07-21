@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <title>BsnNet LLC | Behavioral Services  Network!</title>
+    {% block stylesheets %}
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="{{ asset('global_assets/css/icons/icomoon/styles.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('global_assets/css/icons/fontawesome/styles.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/bootstrap_limitless.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/layout.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/components.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('assets/css/colors.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+    {% endblock %}
+</head>
+<body>
+<!-- Page content -->
+<div class="page-content login-cover">
+    <div class="topbar">
+        <h1>Behavioral Services Network, LLC</h1>
+    </div>
+    <!-- Main content -->
+    <div class="content-wrapper">
+        {% block body %}{% endblock %}
+    </div>
+    <!-- /main content -->
+    <div class="footer">
+        <h4>&copy; {{ "now"|date("Y") }} Behavioral Services Network, LLC</h4>
+    </div>
+</div>
+<!-- /page content -->
+{% block javascripts %}
+    <!-- Core JS files -->
+    <script src="{{ asset('global_assets/js/main/jquery.min.js') }}"></script>
+    <script src="{{ asset('global_assets/js/plugins/loaders/blockui.min.js') }}"></script>
+    <script src="{{ asset('global_assets/js/plugins/forms/styling/uniform.min.js') }}"></script>
+    <script src="{{ asset('global_assets/js/plugins/forms/selects/select2.min.js') }}"></script>
+    <script src="{{ asset('global_assets/js/demo_pages/login.js') }}"></script>
+{% endblock %}
+</body>
+</html>
